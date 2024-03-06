@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/two.css">
+</head>
+<body>
+    <h2 class="one"> TITAN WATCHS JEANS MODAL</h2>
+    <div class="two">
+        <img class="prem" src="./image/image 1.page.jpg" alt="">
+        <img class="prem" src="./image/image 2.page.jpg" alt="">
+        <img class="prem" src="./image/image 3.page.jpg" alt="">
+        <img class="prem" src="./image/image 8.page.jpg" alt="">
+        <img class="prem" src="./image/image.page.jpg"   alt="">
+        <img class="prem" src="./image/image 10.page.jpg" alt="">
+        <img class="prem" src="./image/image 4.page.jpg" alt="">
+        <img class="prem" src="./image/image 5.page.jpg" alt="">
+        <img class="prem" src="./image/image 6.page.jpg" alt="">
+        <img class="prem" src="./image/image 7.page.jpg" alt="">
+        </div>
+    <script>
+        var myindex =0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("prem");
+            for (i = 0;i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myindex++;
+            if(myindex > x.length) {myindex = 1}
+            x[myindex -1].style.display = "block";
+            setTimeout(carousel,2000);
+        }
+    </script>
+    <h2 class="three">JEANS MODAL</h2>
+    <div class="four">
+      <div id="A1">
+        <img src="./image/modal.1 page.jpg" alt="">
+      </div>
+      <div id="A2">
+       <img src="./image/modal.2page.jpg" alt="">
+      </div>
+      <div id="A3">
+       <img src="./image/modal.3page.jpg" alt="">
+      </div>
+      <div id="A4">
+       <img src="./image/modal.4page.jpg" alt="">
+      </div>
+      <div id="A5">
+        <img src="./image/modal 5.page.jpg" alt="">
+      </div>
+      <div id="A6">
+        <img src="./image/modal 6.page.jpg" alt="">
+      </div>
+      <div id="A7">
+         <img src="./image/modal 7.page.jpg" alt="">
+      </div>
+      <div id="A8">
+          <img src="./image/modal 8.page.jpg" alt="">
+      </div>
+      <div id="A9">
+       <img src="./image/modal 9.page.jpg" alt="">
+      </div>
+      <div id="A10">
+       <img src="./image/modal 10.page.jpg" alt="">
+      </div>
+      <div id="A11">
+       <img src="./image/modal 11.page.jpg" alt=""> 
+      </div>
+      <div id="A12">
+        <img src="./image/modal 12.page.jpg" alt="">
+      </div>
+    </div>
+    <div class="five">
+     <div id="B1">
+      <img src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwc17b5cd2/images/homepage/Gurantee.svg" alt="">
+      <h3>100% ORIGINAL</h3>
+     </div>
+     <div id="B2">     
+        <img src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw0987d956/images/homepage/Return.svg" alt="">
+        <h3>7 DAY RETURN</h3>
+     </div>
+     <div id="B3">
+         <img src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dw824f2669/images/homepage/Shipping.svg" alt="">
+         <h3>FREE SHIPPING</h3>
+     </div>
+    </div>
+    <div class="six">
+      <div id="#c1">
+        <h1>LOGIN FOR THE BEST EXPERIENCE</h1>
+        <ul>
+        <li><a href="./three.html">LODIN NOW</a></li>
+        </ul>
+        <ol>
+          <li><a href="">Create An Account<hr></a></li>
+        </ol>
+    </div> 
+</body>
+</html>

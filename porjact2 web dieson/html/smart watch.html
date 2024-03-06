@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart watch</title>
+    <link rel="stylesheet" href="./style/smart watch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h4>SMART WATCHES</h4>
+    <div class="unit1">
+      <div class="image">
+       <img src="./image/smart watch.1page.jpg" alt="">
+      </div>
+      <div class="image">
+        <img src="./image/smart watch.2page.png" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.3page.jpg" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.4page.jpg" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.5page.jpg" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.6page.jpg" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.7page.jpg" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.8page.jpg" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.9page.jpg" alt="">
+       </div>
+       <div class="image">
+        <img src="./image/smart watch.10page.jpg" alt="">
+       </div>
+       <div class="button">
+           <a onclick="nextimg(-1)" class="prev">&laquo;</a>
+           <a onclick="nextimg(1)" class="next">&raquo;</a>
+       </div>
+       <div  class="dots">
+         <span class="dot" onclick="currentslide(1)"></span>
+         <span class="dot" onclick="currentslide(2)"></span>
+         <span class="dot" onclick="currentslide(3)"></span>
+         <span class="dot" onclick="currentslide(4)"></span>
+         <span class="dot" onclick="currentslide(5)"></span>
+         <span class="dot" onclick="currentslide(6)"></span>
+         <span class="dot" onclick="currentslide(7)"></span>
+         <span class="dot" onclick="currentslide(8)"></span>
+         <span class="dot" onclick="currentslide(9)"></span>
+         <span class="dot" onclick="currentslide(10)"></span>
+       </div>
+    </div>
+
+     <script>
+        var imageno=1;
+        displayimg(imageno);
+           function nextimg(n){
+            displayimg(imageno += n)
+           } 
+           function currentslide(n){
+            displayimg(imageno = n)
+           }
+           function displayimg(n){
+            var i;
+            var image = document.getElementsByClassName("image");
+            var dots = document.getElementsByClassName("dot");
+            if(n > image.length){
+                image=1;
+            }
+            if(n < 1){
+                imageno = image.length;
+            }
+            for(i=0; i < image.length; i++){
+                image[i].style.display = "none";
+            }
+            for(i=0; i <dots.length; i++){
+                dots[i].className = dots[i].className.replace( " active" ,"");
+            }
+            image[imageno -1].style.display ="block";
+            dots[imageno -1].className += "active";
+           }
+     </script>
+      <div class="unit2">
+        <h6>smart watch model</h6>
+         <div id="u1">
+           <img src="./image/u6.page.jpg" alt="">
+         </div>
+         <div id="u2">
+            <img src="./image/u2.page.webp" alt="">
+          </div>
+          <div id="u3">
+            <img src="./image/u11.page.jpg" alt="">
+          </div>
+          <div id="u4">
+            <img src="./image/u4.page.jpg" alt="">
+          </div>
+          <div id="u5">
+            <img src="./image/u5.page.webp" alt="">
+          </div>
+          <div id="u6">
+            <img src="./image/u7.page.jpg" alt="">
+          </div>
+          <div id="u7">
+            <img src="./image/u8.page.webp" alt="">
+          </div>
+          <div id="u8">
+            <img src="./image/u9.page.jpg" alt="">
+          </div>
+          <div id="u9">
+            <img src="./image/u10.page.jpg" alt="">
+          </div>
+      </div>
+      <div class="unit3">
+        <video autoplay loop muted plays-inline>
+          <source src="./video/video 2.page.mp4" type="video/mp4">
+     </video> 
+      </div>
+      <div class="unit4">
+         <img src="./image/unit4.page.jpg" alt="">
+         <h5>SMART WATCHES HISTORY</h5>
+         <p>A smartwatch is a portable device that's designed <br> to be worn on a wrist. Like smartphones, they use touchscreens, offer apps, and often record <br> your heart rate and other vital signs.</p>
+      </div>
+      <div class="unit5">
+        <h3>Our Partners</h3>
+        <div id="s1">
+          <img src="https://gourban.in/cdn/shop/files/01_c34f16ef-8214-48b3-b398-0681ac7220d6.png?v=1705903461&width=189" alt="">
+        </div>
+        <div id="s2">
+          <img src="https://gourban.in/cdn/shop/files/02_796316d0-c234-43d2-bc29-024c5a53fbf8.png?v=1705903484&width=189" alt="">
+        </div>
+        <div id="s3">
+          <img src="https://gourban.in/cdn/shop/files/03_3973ab9a-1bcd-458a-b29b-d4ce21d3d4f4.png?v=1705903507&width=189" alt="">
+        </div>
+        <div id="s4">
+          <img src="https://gourban.in/cdn/shop/files/04_e629cb32-3cb9-4c17-a454-1022120bf395.png?v=1705903525&width=189" alt="">
+        </div>
+        <div id="s5">
+          <img src="https://gourban.in/cdn/shop/files/05_78df164e-72ff-4400-91fd-b5c25a829efa.png?v=1705903548&width=189" alt="">
+        </div>
+        <div id="s6">
+          <img src="https://gourban.in/cdn/shop/files/06_5f624735-3c57-4774-aa96-68077de72df5.png?v=1705903571&width=189" alt="">
+        </div>
+        <div id="s7">
+          <img src="https://gourban.in/cdn/shop/files/07_d43fb9a7-69a5-47c4-95a9-6125c1e8f84a.png?v=1705903617&width=189" alt="">
+        </div>
+      </div>
+      <div class="unit6">
+        <h1>experience</h1>
+       <div id="e1">
+         <img src="https://gourban.in/cdn/shop/files/1_Year_Warranty_81b39cf5-82c7-4341-9165-a23bfda41fdb.png?v=1705562908&width=150" alt="">
+         <h2>1 Year Warranty</h2>
+       </div>
+       <div id="e2">
+          <img src="https://gourban.in/cdn/shop/files/7_Day_Replacement.png?v=1705562908&width=150" alt="">
+          <h2>7 Day Replacement</h2>
+        </div>
+        <div id="e3">
+          <img src="https://gourban.in/cdn/shop/files/Free_Shipping.png?v=1705562908&width=150" alt="">
+          <h2>Free Shipping</h2>
+        </div>
+        <div id="e4">
+          <img src="https://gourban.in/cdn/shop/files/GST_Billing_6eae306c-c7e5-4d42-be89-94d0dc51dd26.png?v=1705562908&width=150" alt="">
+          <h2>GST Billing</h2>
+        </div>
+        <div id="e5">
+           <img src="https://gourban.in/cdn/shop/files/Legacy_of_8_years.png?v=1705562908&width=150" alt="">
+           <h2>Legacy Of 8 Years</h2>
+        </div>
+      </div>
+      <div class="unit7">
+        <a href="https://www.facebook.com/titanwatches/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/titanwatchesindia/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC1XGehemXHIZkkbup3EtCAA"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+</body>
+</html>

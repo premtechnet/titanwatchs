@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/internationa brands.css">
+</head>
+<body>
+  <div class="one">
+      <div class="image">
+       <img src="./image/titan company.page.jpg" alt="">
+       <div id="a1">
+       <h1>Titan company</h1>
+       <p>Titan Company Limited (Titan), a joint venture <br> between the Tata Group and the Tamil Nadu <br> Industrial Development Corporation (TIDCO), commenced its operations in 1984. <br> Titan is the fifth largest integrated <br> brand watch manufacturer in the world.</p>
+       <img src="./image/titan.page.png" class="logo1" alt="">
+       </div>
+      </div>
+      <div class="image">
+        <img src="./image/apple company.page.jpg" alt="">
+        <div id="a2">
+        <h1>apple company</h1><br>
+        <p>The Apple Watch is a smartwatch produced by Apple Inc</p>
+        <img src="./image/apple logo.page.webp" class="logo2" alt="">
+        </div>
+       </div>
+       <div class="image">
+        <img src="./image/onen.webp" alt="">
+        <div id="a3">
+        <h1>rolex company</h1>
+        <p>Rolex SA is the leading luxury watch manufacturer <br> in the world producing over 1.05 million watches that <br> generate sales of over $13 billion dollars in 2022</p>
+        <img src="./image/rolex logo.page.jpg" class="logo3" alt="">
+        </div>
+       </div>
+       <div class="image">
+        <img src="./image/omega company .page.jpg" alt="">
+        <div id="a4">
+        <h1>omega company</h1>
+        <p>Omega SA is a Swiss luxury watchmaker <br> based in Biel/Bienne, Switzerland.</p>
+        <img src="./image/omega logo.page.jpg" class="logo4" alt="">
+        </div>
+       </div>
+       <div class="image">
+        <img src="./image/u-boat company.page.jpg" alt="">
+        <div id="a5">
+        <h1>u-boat company</h1>
+        <P>U-boat is a watchmaking company that <br> combines Italian heritage with Swiss precision</P>
+        <img src="./image/u-bloat logo.jpg" class="logo5" alt="">
+        </div>
+  </div>
+  
+  <script>
+        var myindex =0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("image");
+            for (i = 0;i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myindex++;
+            if(myindex > x.length) {myindex = 1}
+            x[myindex -1].style.display = "block";
+            setTimeout(carousel,2000);
+          }    
+ </script>
+
+</body>
+</html>
